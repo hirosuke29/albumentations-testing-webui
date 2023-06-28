@@ -5,14 +5,6 @@
     "p": 1.0,
     "transforms": [
       {
-        "__class_fullname__": "Resize",
-        "always_apply": false,
-        "p": 1,
-        "height": 400,
-        "width": 800,
-        "interpolation": 1
-      },
-      {
         "__class_fullname__": "Normalize",
         "always_apply": false,
         "p": 1.0,
@@ -23,24 +15,7 @@
       {
         "__class_fullname__": "Flip",
         "p": 0.5
-      },
-      {
-        "__class_fullname__": "RandomBrightnessContrast",
-        "brightness_limit": 0.2,
-        "contrast_limit": 0.2,
-        "p": 0.5
-      },
-      {
-        "__class_fullname__": "RandomResizedCrop",
-        "height": 400,
-        "width": 800,
-        "scale": [0.7, 1.0],
-        "ratio": [2.0, 2.0],
-        "p": 0.7
       }
-    ],
-    "bbox_params": null,
-    "keypoint_params": null,
-    "additional_targets": {}
+    ]
   }
 }
