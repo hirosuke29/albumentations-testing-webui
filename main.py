@@ -31,6 +31,8 @@ def main():
     transformed_image_array = albu_transform(image=np.array(image))["image"]
     st.image(transformed_image_array, caption="Transformed Image", clamp=True)
     st.write(f"width: {transformed_image_array.shape[1]}, height: {transformed_image_array.shape[0]}, channels: {transformed_image_array.shape[2]}")
+  
+    st.button("Re-transform", on_click=None)
 
 if __name__ == "__main__":
   main()
